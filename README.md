@@ -29,51 +29,51 @@ poetry run uvicorn main:app --reload
 
 The service will start on http://localhost:8000 by default.
 
-##API Usage
+## API Usage
 
 1. Question Answering Endpoint (/qa)
-   Input Format:
 
-HTTP Method: POST
+- **Input Format:**
 
-Endpoint: /qa
+  - HTTP Method: POST
 
-Request Body: JSON with the following structure:
+  - Endpoint: /qa
 
-```json
-{
-  "context": "Your context paragraph goes here.",
-  "question": "Your question goes here."
-}
+  - Request Body: JSON with the following structure:
 
-```
+   ```json
+   {
+     "context": "Your context paragraph goes here.",
+     "question": "Your question goes here."
+   }
+   ```
 
-Output Format:
+    
 
-JSON response with the generated answer:
+- **Output Format:**
 
-```json
-{
-  "answer": "Generated answer for the given question."
-}
+  - JSON response with the generated answer:
 
-```
+   ```json
+   {
+     "answer": "Generated answer for the given question."
+   }
+   ```
 
-
-
+    
 
 
 2. Dataset Processing Endpoint (/dataset)
 
-3. **Input Format**:
+  - **Input Format**:
 
-   - HTTP Method: `POST`
+    - HTTP Method: `POST`
 
-   - Endpoint: `/dataset`
+    - Endpoint: `/dataset`
 
-   - Request Body: JSON with the following structure:
+    - Request Body: JSON with the following structure:
 
-   - ```json
+     ```
      {
        "data": [
          {
@@ -83,21 +83,22 @@ JSON response with the generated answer:
          }
        ]
      }
-     
      ```
 
-     **Output Format**:
+      
 
-   - JSON response indicating the success of CSV creation:
+    **Output Format**:
 
-   - ```json
-     {
-       "message": "CSV file created successfully!"
-     }
-     
-     ```
+    - JSON response indicating the success of CSV creation:
 
-     
+    ```json
+    {
+      "message": "CSV file created successfully!"
+    }
+    
+    ```
+
+    
 
 
 
