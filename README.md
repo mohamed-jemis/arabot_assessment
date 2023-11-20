@@ -61,9 +61,6 @@ JSON response with the generated answer:
 
 
 
-curl -X POST -H "Content-Type: application/json" -d '{"context": "Example context.", "question": "What is FastAPI?"}' http://127.0.0.1:8000/qa
-
-
 
 
 2. Dataset Processing Endpoint (/dataset)
