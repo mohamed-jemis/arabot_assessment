@@ -29,7 +29,7 @@ poetry run uvicorn main:app --reload
 
 The service will start on http://localhost:8000 by default.
 
-## API Usage
+## APIs
 
 1. Question Answering Endpoint (/qa)
 
